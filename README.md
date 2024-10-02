@@ -16,4 +16,6 @@ Notes:
   But although it was working, it had some issue. So, I wanted to implement it using context API.
   So that TodoFOrm and TodoList could communicate directly through Contextn API.
   But time didn't allow, so this is my final code.
+6. Key prop has not been given while rendering the data list because I planned on generating a unique key rather than using
+   index as the key.
 
