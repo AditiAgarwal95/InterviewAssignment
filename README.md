@@ -5,6 +5,8 @@ Change to todo-app directory
 1. npm install
 2. npm run dev
 
+Please note this app is created using Vite.
+
 Notes:
 1. Search, Delete and Add implemented.
 2. Search has been implemented with debouncing for optimization.
