@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import TodoItem from './TodoItem';
 import { todoArray } from '../todoData';
 
-function TodoList({searchQuery}) {
+function TodoList({searchQuery, newTask}) {
 
  const [todoData, setTodoData] = useState([...todoArray])
  const [todoId, setTodoId] = useState(0)
@@ -25,9 +25,10 @@ function TodoList({searchQuery}) {
      }))
    }, [searchQuery])
 
-//    useEffect(()=>{
-//       setTodoData([...todoData, {...newTask}])
-//    }, [newTask])
+   useEffect(()=>{
+      newTask.id &&
+      setTodoData([...todoData, {...newTask}])
+   }, [newTask])
 
   return (
     <div>
