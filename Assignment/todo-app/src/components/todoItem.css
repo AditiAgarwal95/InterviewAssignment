@@ -1,0 +1,9 @@
+.itemList{
+    :first-child{
+     list-style: none;
+    }
+
+    :last-child{
+        list-style: none;
+    }
+}
